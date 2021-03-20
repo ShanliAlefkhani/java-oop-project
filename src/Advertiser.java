@@ -15,6 +15,10 @@ public class Advertiser extends BaseAdvertising{
         super.incClicks();
         totalClicks++;
     }
+    @Override
+    public String describeMe() {
+        return null;
+    }
     public String getName() {
         return this.name;
     }
@@ -22,9 +26,6 @@ public class Advertiser extends BaseAdvertising{
         this.name = name;
     }
     public String help() {
-        return "Something";
-    }
-    public String describeMe() {
         return "Something";
     }
 }
