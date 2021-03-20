@@ -1,7 +1,11 @@
 public abstract class BaseAdvertising {
     private int id;
-    private int clicks;
-    private int views;
+    private int clicks = 0;
+    private int views = 0;
+
+    public BaseAdvertising(int id) {
+        this.id = id;
+    }
 
     int getClicks() {
         return this.clicks;
