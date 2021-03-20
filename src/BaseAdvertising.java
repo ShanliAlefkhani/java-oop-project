@@ -19,4 +19,5 @@ public abstract class BaseAdvertising {
     void incViews() {
         this.views++;
     }
+    public abstract String describeMe();
 }
