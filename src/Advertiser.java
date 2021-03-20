@@ -10,6 +10,9 @@ public class Advertiser extends BaseAdvertising{
     public static int getTotalClicks() {
         return totalClicks;
     }
+    public static String help() {
+        return "Something";
+    }
     @Override
     public void incClicks() {
         super.incClicks();
@@ -24,8 +27,5 @@ public class Advertiser extends BaseAdvertising{
     }
     public void setName(String name) {
         this.name = name;
-    }
-    public String help() {
-        return "Something";
     }
 }
