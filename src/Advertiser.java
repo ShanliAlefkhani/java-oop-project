@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Advertiser extends BaseAdvertising{
     private static int totalClicks;
-    public static ArrayList<Advertiser> advertisers;
+    public static ArrayList<Advertiser> advertisers = new ArrayList<>();
     private String name;
-    private ArrayList<Ad> ads;
+    private ArrayList<Ad> ads = new ArrayList<>();
 
     public Advertiser(int id, String name) {
         super(id);
