@@ -12,9 +12,8 @@ public class Ad extends BaseAdvertising{
         this.advertiser = advertiser;
     }
 
-    @Override
-    public String describeMe() {
-        return null;
+    public static String describeMe() {
+        return "Something";
     }
     public String getTitle() {
         return this.title;

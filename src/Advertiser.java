@@ -13,14 +13,13 @@ public class Advertiser extends BaseAdvertising{
     public static String help() {
         return "Something";
     }
+    public static String describeMe() {
+        return "Something";
+    }
     @Override
     public void incClicks() {
         super.incClicks();
         totalClicks++;
-    }
-    @Override
-    public String describeMe() {
-        return null;
     }
     public String getName() {
         return this.name;

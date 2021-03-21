@@ -7,6 +7,9 @@ public abstract class BaseAdvertising {
         this.id = id;
     }
 
+    public static String describeMe() {
+        return "Something";
+    }
     int getClicks() {
         return this.clicks;
     }
@@ -19,5 +22,4 @@ public abstract class BaseAdvertising {
     void incViews() {
         this.views++;
     }
-    public abstract String describeMe();
 }
