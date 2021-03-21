@@ -1,5 +1,5 @@
 public abstract class BaseAdvertising {
-    private int id;
+    final private int id;
     private int clicks = 0;
     private int views = 0;
 

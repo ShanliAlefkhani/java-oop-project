@@ -5,8 +5,8 @@ public class Main {
         Ad ad1 = new Ad(1, "title1", "img-url1", "link1", advertiser1);
         Ad ad2 = new Ad(2, "title2", "img-url2", "link2", advertiser2);
         System.out.println(BaseAdvertising.describeMe());
-        System.out.println(ad2.describeMe());
-        System.out.println(advertiser1.describeMe());
+        System.out.println(Ad.describeMe());
+        System.out.println(Advertiser.describeMe());
         ad1.incViews();
         ad1.incViews();
         ad1.incViews();
