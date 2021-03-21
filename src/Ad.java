@@ -1,4 +1,7 @@
+import java.util.ArrayList;
+
 public class Ad extends BaseAdvertising{
+    public static ArrayList<Ad> list = new ArrayList<>();
     private String title;
     private String imgUrl;
     private String link;
@@ -10,6 +13,7 @@ public class Ad extends BaseAdvertising{
         this.imgUrl = imgUrl;
         this.link = link;
         this.advertiser = advertiser;
+        list.add(this);
         advertiser.addAd(this);
     }
 

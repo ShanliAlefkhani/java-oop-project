@@ -2,14 +2,14 @@ import java.util.ArrayList;
 
 public class Advertiser extends BaseAdvertising{
     private static int totalClicks;
-    public static ArrayList<Advertiser> advertisers = new ArrayList<>();
+    public static ArrayList<Advertiser> list = new ArrayList<>();
     private String name;
     private ArrayList<Ad> ads = new ArrayList<>();
 
     public Advertiser(int id, String name) {
         super(id);
         this.name = name;
-        advertisers.add(this);
+        list.add(this);
     }
 
     public static int getTotalClicks() {
