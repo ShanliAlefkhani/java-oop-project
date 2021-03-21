@@ -7,8 +7,13 @@ public class Ad extends BaseAdvertising{
     private String link;
     private Advertiser advertiser;
 
-    public Ad(int id, String title, String imgUrl, String link, Advertiser advertiser) {
+    public Ad(int id, String title, String imgUrl, String link, Advertiser advertiser) throws Exception {
         super(id);
+        for(Ad ad : list) {
+            if(ad.getId() == id) {
+                throw new Exception("There is an ad with this id!");
+            }
+        }
         this.title = title;
         this.imgUrl = imgUrl;
         this.link = link;

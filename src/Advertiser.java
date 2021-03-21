@@ -6,8 +6,13 @@ public class Advertiser extends BaseAdvertising{
     private String name;
     private ArrayList<Ad> ads = new ArrayList<>();
 
-    public Advertiser(int id, String name) {
+    public Advertiser(int id, String name) throws Exception {
         super(id);
+        for(Advertiser advertiser : list) {
+            if(advertiser.getId() == id) {
+                throw new Exception("There is an advertiser with this id!");
+            }
+        }
         this.name = name;
         list.add(this);
     }
