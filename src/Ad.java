@@ -10,6 +10,7 @@ public class Ad extends BaseAdvertising{
         this.imgUrl = imgUrl;
         this.link = link;
         this.advertiser = advertiser;
+        advertiser.addAd(this);
     }
 
     public static String describeMe() {

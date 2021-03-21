@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+
 public class Advertiser extends BaseAdvertising{
-    static int totalClicks;
+    private static int totalClicks;
     private String name;
+    private ArrayList<Ad> ads;
 
     public Advertiser(int id, String name) {
         super(id);
@@ -26,5 +29,8 @@ public class Advertiser extends BaseAdvertising{
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public void addAd(Ad ad) {
+        this.ads.add(ad);
     }
 }
