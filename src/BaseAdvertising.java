@@ -10,16 +10,17 @@ public abstract class BaseAdvertising {
     public static String describeMe() {
         return "Something";
     }
-    int getClicks() {
+    public int getId() { return this.id; }
+    public int getClicks() {
         return this.clicks;
     }
-    int getViews() {
+    public int getViews() {
         return this.views;
     }
-    void incClicks() {
+    public void incClicks() {
         this.clicks++;
     }
-    void incViews() {
+    public void incViews() {
         this.views++;
     }
 }
