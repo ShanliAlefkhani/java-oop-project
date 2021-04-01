@@ -21,7 +21,11 @@ public class Advertiser extends BaseAdvertising{
         return totalClicks;
     }
     public static String help() {
-        return "Something";
+        return "Advertiser Class Fields:\n" +
+                "• id\n" +
+                "• name\n" +
+                "• clicks\n" +
+                "• views\n";
     }
     public static String describeMe() {
         return "Something";
